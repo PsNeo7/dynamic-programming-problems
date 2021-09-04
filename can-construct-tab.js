@@ -1,7 +1,7 @@
 const canConstructTab = (target, subStrings) => {
     table = Array(target.length + 1).fill(false)
     table[0] = true
-    table.forEach((char, index) => {
+    table.forEach((_, index) => {
         if (table[index] == true) {
             for (const subString of subStrings) {
                 if (target.slice(index, index + subString.length) == subString) {
